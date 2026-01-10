@@ -57,7 +57,7 @@ const Hero = () => {
                     {/* Get Started - slightly rounded */}
                     <RippleButton rippleColor="#ADD8E6">
                         <AnimatedHoverLinkButton
-                            href={HERO_CONFIG.buttons.primary.href}
+                            href="https://doc-assistant-xi.vercel.app/"
                             className="px-8 py-3 text-lg font-bold transform  hover:scale-105 transition-all duration-300 backdrop-blur-md rounded-full hover:text-white"
                         >
                             {HERO_CONFIG.buttons.primary.text}
@@ -68,6 +68,7 @@ const Hero = () => {
                     <AnimatedGradientButton
                         text={HERO_CONFIG.buttons.secondary.text}
                         className="px-8 py-3 text-lg rounded-full"
+                        href = "https://doc-assistant-xi.vercel.app/"
                     />
                 </motion.div>
 
