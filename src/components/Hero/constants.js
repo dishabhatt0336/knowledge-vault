@@ -7,7 +7,7 @@ export const HERO_CONFIG = {
   buttons: {
     primary: {
       text: "Get Started",
-      href: "https://github.com"
+      href: "https://doc-assistant-xi.vercel.app/"
     },
     secondary: {
       text: "Try now"
