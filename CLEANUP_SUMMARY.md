@@ -108,8 +108,8 @@ import { TypingAnimation, ShimmerButton, GlowButton } from '@/components/ui';
 
 // Clean, reusable components
 <TypingAnimation text="Hello World" />
-<ShimmerButton href="/login">Get Started</ShimmerButton>
-<GlowButton href="/signup">Sign Up</GlowButton>
+<ShimmerButton href="https://doc-assistant-xghg.onrender.com/">Get Started</ShimmerButton>
+<GlowButton href="https://doc-assistant-xi.vercel.app/">Sign Up</GlowButton>
 ```
 
 ### Using custom hooks:

@@ -96,12 +96,12 @@ export default function Navbar() {
 
           {/* Action Buttons */}
           <div className="flex items-center gap-4 ">
-            <Link to="/login">
+            <Link to="https://doc-assistant-xghg.onrender.com/">
               <NavbarButton variant="secondary">
                 Login
               </NavbarButton>
             </Link>
-            <Link to="/signup">
+            <Link to="https://doc-assistant-xi.vercel.app/">
               <NavbarButton variant="primary">
                 Sign Up
               </NavbarButton>
@@ -162,12 +162,12 @@ export default function Navbar() {
                   : 'translate-y-4 opacity-0'
               }`}
               style={{ transitionDelay: '200ms' }}>
-                <Link to="/login" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link to="https://doc-assistant-xghg.onrender.com/" onClick={() => setIsMobileMenuOpen(false)}>
                   <NavbarButton variant="secondary" className="w-full">
                     Login
                   </NavbarButton>
                 </Link>
-                <Link to="/signup" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link to="https://doc-assistant-xi.vercel.app/" onClick={() => setIsMobileMenuOpen(false)}>
                   <NavbarButton variant="primary" className="w-full">
                     Sign Up
                   </NavbarButton>

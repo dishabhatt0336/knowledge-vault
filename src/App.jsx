@@ -9,10 +9,11 @@ import { ScrollComponent } from "@/components/ScrollComponent";
 import LoadingSpinner from "@/components/UI/LoadingSpinner";
 import { Meteors } from '@/components/magicui/meteors';
 import { Scroll } from 'lucide-react';
+import { useEffect } from "react";
 
 // Lazy load components for better performance
-const LoginPage = lazy(() => import("@/pages/Login"));
-const SignupPage = lazy(() => import("@/pages/Signup"));
+// const LoginPage = lazy(() => import("@/pages/Login"));
+// const SignupPage = lazy(() => import("@/pages/Signup"));
 
 function HomePage() {
   return (
@@ -32,6 +33,22 @@ function HomePage() {
   );
 }
 
+
+function ExternalLoginRedirect() {
+  useEffect(() => {
+    window.location.href = "https://doc-assistant-xghg.onrender.com/";
+  }, []);
+
+  return null;
+}
+function ExternalSigninRedirect() {
+  useEffect(() => {
+    window.location.href = "https://doc-assistant-xi.vercel.app/";
+  }, []);
+
+  return null;
+}
+
 export default function App() {
   return (
     <div className="relative min-h-screen">
@@ -44,8 +61,8 @@ export default function App() {
           <Suspense fallback={<LoadingSpinner />}>
             <Routes>
               <Route path="/" element={<HomePage />} />
-              <Route path="/login" element={<LoginPage />} />
-              <Route path="/signup" element={<SignupPage />} />
+              <Route path="/" element={<ExternalLoginRedirect />} />
+              <Route path="/" element={<ExternalSigninRedirect />} />
             </Routes>
           </Suspense>
         </Router>
